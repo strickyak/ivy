@@ -1,4 +1,4 @@
-package main // import "robpike.io/ivy/talks"
+package main // import "github.com/strickyak/ivy/talks"
 
 import (
 	"bufio"

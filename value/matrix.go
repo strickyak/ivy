@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"strings"
 
-	"robpike.io/ivy/config"
+	"github.com/strickyak/ivy/config"
 )
 
 /*

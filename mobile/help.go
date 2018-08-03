@@ -1,7 +1,7 @@
 package mobile
 
 // GENERATED; DO NOT EDIT
-const help = `<!-- auto-generated from robpike.io/ivy package doc -->
+const help = `<!-- auto-generated from github.com/strickyak/ivy package doc -->
 
 <head>
     <style>

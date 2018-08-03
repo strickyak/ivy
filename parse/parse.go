@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package parse // import "robpike.io/ivy/parse"
+package parse // import "github.com/strickyak/ivy/parse"
 
 import (
 	"bytes"
 	"fmt"
 	"strconv"
 
-	"robpike.io/ivy/exec"
-	"robpike.io/ivy/scan"
-	"robpike.io/ivy/value"
+	"github.com/strickyak/ivy/exec"
+	"github.com/strickyak/ivy/scan"
+	"github.com/strickyak/ivy/value"
 )
 
 // tree formats an expression in an unambiguous form for debugging.

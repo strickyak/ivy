@@ -10,7 +10,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"robpike.io/ivy/mobile"
+	"github.com/strickyak/ivy/mobile"
 )
 
 /*

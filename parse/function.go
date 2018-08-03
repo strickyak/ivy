@@ -7,9 +7,9 @@ package parse
 import (
 	"fmt"
 
-	"robpike.io/ivy/exec"
-	"robpike.io/ivy/scan"
-	"robpike.io/ivy/value"
+	"github.com/strickyak/ivy/exec"
+	"github.com/strickyak/ivy/scan"
+	"github.com/strickyak/ivy/value"
 )
 
 // function definition

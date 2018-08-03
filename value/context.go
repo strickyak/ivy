@@ -4,7 +4,7 @@
 
 package value
 
-import "robpike.io/ivy/config"
+import "github.com/strickyak/ivy/config"
 
 // Expr and Context are defined here to avoid import cycles
 // between parse and value.

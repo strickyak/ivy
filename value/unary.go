@@ -5,6 +5,7 @@
 package value
 
 import (
+	"fmt"
 	"math/big"
 	"unicode/utf8"
 )
@@ -393,6 +394,9 @@ func init() {
 		{
 			name: "rho",
 			fn: [numType]unaryFn{
+				boxType: func(c Context, v Value) Value {
+					return Vector{}
+				},
 				intType: func(c Context, v Value) Value {
 					return Vector{}
 				},
@@ -420,6 +424,7 @@ func init() {
 		{
 			name: ",",
 			fn: [numType]unaryFn{
+				boxType:      vectorSelf,
 				intType:      vectorSelf,
 				charType:     vectorSelf,
 				bigIntType:   vectorSelf,
@@ -689,9 +694,49 @@ func init() {
 				bigFloatType: floatSelf,
 			},
 		},
+
+		{
+			name:        "box",
+			elementwise: true,
+			fn: [numType]unaryFn{
+				charType:     box,
+				intType:      box,
+				bigIntType:   box,
+				bigRatType:   box,
+				bigFloatType: box,
+				vectorType:   box,
+				matrixType:   box,
+			},
+		},
+
+		{
+			name:        "unbox",
+			elementwise: true,
+			fn: [numType]unaryFn{
+				boxType: unbox,
+			},
+		},
 	}
 
 	for _, op := range ops {
 		UnaryOps[op.name] = op
 	}
+}
+
+func box(ctx Context, v Value) Value {
+	return Box{v}
+}
+
+func unbox(ctx Context, v Value) Value {
+	b, ok := v.(Box)
+	if !ok {
+		panic(Error(fmt.Sprintf("Cannot unbox type %T", v)))
+	}
+
+	z, ok := b.Contents.(Value)
+	if !ok {
+		panic(Error(fmt.Sprintf("Cannot unbox a boxed thing of type %T", b.Contents)))
+	}
+
+	return z
 }

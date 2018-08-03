@@ -13,9 +13,9 @@ import (
 	"os"
 	"sort"
 
-	"robpike.io/ivy/config"
-	"robpike.io/ivy/exec"
-	"robpike.io/ivy/value"
+	"github.com/strickyak/ivy/config"
+	"github.com/strickyak/ivy/exec"
+	"github.com/strickyak/ivy/value"
 )
 
 /*

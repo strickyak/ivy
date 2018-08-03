@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package config // import "robpike.io/ivy/config"
+package config // import "github.com/strickyak/ivy/config"
 
 import (
 	"fmt"

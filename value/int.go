@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"robpike.io/ivy/config"
+	"github.com/strickyak/ivy/config"
 )
 
 // Int is not only the simplest representation, it provides the operands that mix

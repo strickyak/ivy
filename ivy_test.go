@@ -12,7 +12,7 @@ import (
 	"strings"
 	"testing"
 
-	"robpike.io/ivy/mobile" // The mobile package has the handy Eval function.
+	"github.com/strickyak/ivy/mobile" // The mobile package has the handy Eval function.
 )
 
 const verbose = false

@@ -20,12 +20,12 @@ import (
 	"io"
 	"strings"
 
-	"robpike.io/ivy/config"
-	"robpike.io/ivy/exec"
-	"robpike.io/ivy/parse"
-	"robpike.io/ivy/run"
-	"robpike.io/ivy/scan"
-	"robpike.io/ivy/value"
+	"github.com/strickyak/ivy/config"
+	"github.com/strickyak/ivy/exec"
+	"github.com/strickyak/ivy/parse"
+	"github.com/strickyak/ivy/run"
+	"github.com/strickyak/ivy/scan"
+	"github.com/strickyak/ivy/value"
 )
 
 var (

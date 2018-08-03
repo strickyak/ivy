@@ -4,7 +4,7 @@
 
 //go:generate stringer -type Type
 
-package scan // import "robpike.io/ivy/scan"
+package scan // import "github.com/strickyak/ivy/scan"
 
 import (
 	"fmt"
@@ -13,8 +13,8 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"robpike.io/ivy/exec"
-	"robpike.io/ivy/value"
+	"github.com/strickyak/ivy/exec"
+	"github.com/strickyak/ivy/value"
 )
 
 // Token represents a token or text string returned from the scanner.

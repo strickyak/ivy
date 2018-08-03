@@ -4,16 +4,16 @@
 
 //go:generate sh -c "(echo '// echo GENERATED; DO NOT EDIT'; echo; echo 'package parse; const specialHelpMessage=`'; sed -n '/^.) [a-z]/,/^$DOLLAR/s/^	//p' ../doc.go; echo '`') | gofmt >help.go"
 
-package parse // import "robpike.io/ivy/parse"
+package parse // import "github.com/strickyak/ivy/parse"
 
 import (
 	"bufio"
 	"fmt"
 	"os"
 
-	"robpike.io/ivy/config"
-	"robpike.io/ivy/scan"
-	"robpike.io/ivy/value"
+	"github.com/strickyak/ivy/config"
+	"github.com/strickyak/ivy/scan"
+	"github.com/strickyak/ivy/value"
 )
 
 const defaultFile = "save.ivy"
@@ -93,7 +93,7 @@ Switch:
 	switch text := p.need(scan.Identifier, scan.Op).Text; text {
 	case "help":
 		p.Println(specialHelpMessage)
-		p.Println("More at: https://godoc.org/robpike.io/ivy")
+		p.Println("More at: https://godoc.org/github.com/strickyak/ivy")
 	case "base", "ibase", "obase":
 		if p.peek().Type == scan.EOF {
 			p.Printf("ibase\t%d\n", ibase)

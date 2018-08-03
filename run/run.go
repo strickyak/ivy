@@ -5,7 +5,7 @@
 // Package run provides the execution control for ivy.
 // It is factored out of main so it can be used for tests.
 // This layout also helps out ivy/mobile.
-package run // import "robpike.io/ivy/run"
+package run // import "github.com/strickyak/ivy/run"
 
 import (
 	"fmt"
@@ -13,10 +13,10 @@ import (
 	"strings"
 	"time"
 
-	"robpike.io/ivy/config"
-	"robpike.io/ivy/parse"
-	"robpike.io/ivy/scan"
-	"robpike.io/ivy/value"
+	"github.com/strickyak/ivy/config"
+	"github.com/strickyak/ivy/parse"
+	"github.com/strickyak/ivy/scan"
+	"github.com/strickyak/ivy/value"
 )
 
 func init() {

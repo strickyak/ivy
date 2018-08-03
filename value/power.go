@@ -7,7 +7,7 @@ package value
 import (
 	"math/big"
 
-	"robpike.io/ivy/config"
+	"github.com/strickyak/ivy/config"
 )
 
 func power(c Context, u, v Value) Value {

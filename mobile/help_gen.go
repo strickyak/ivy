@@ -19,7 +19,7 @@ import (
 )
 
 func main() {
-	pkg, err := build.Import("robpike.io/ivy", "", build.ImportComment)
+	pkg, err := build.Import("github.com/strickyak/ivy", "", build.ImportComment)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -36,7 +36,7 @@ func main() {
 	docPkg := doc.New(astPkg, pkg.ImportPath, doc.AllDecls)
 
 	htmlBuf := new(bytes.Buffer)
-	fmt.Fprintln(htmlBuf, `<!-- auto-generated from robpike.io/ivy package doc -->`)
+	fmt.Fprintln(htmlBuf, `<!-- auto-generated from github.com/strickyak/ivy package doc -->`)
 	fmt.Fprintln(htmlBuf, head)
 	fmt.Fprintln(htmlBuf, `<body>`)
 	doc.ToHTML(htmlBuf, docPkg.Doc, nil)

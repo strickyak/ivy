@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package main // import "robpike.io/ivy"
+package main // import "github.com/strickyak/ivy"
 
 import (
 	"bufio"
@@ -12,12 +12,12 @@ import (
 	"os"
 	"strings"
 
-	"robpike.io/ivy/config"
-	"robpike.io/ivy/exec"
-	"robpike.io/ivy/parse"
-	"robpike.io/ivy/run"
-	"robpike.io/ivy/scan"
-	"robpike.io/ivy/value"
+	"github.com/strickyak/ivy/config"
+	"github.com/strickyak/ivy/exec"
+	"github.com/strickyak/ivy/parse"
+	"github.com/strickyak/ivy/run"
+	"github.com/strickyak/ivy/scan"
+	"github.com/strickyak/ivy/value"
 )
 
 var (
